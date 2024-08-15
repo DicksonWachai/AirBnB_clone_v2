@@ -2,10 +2,8 @@
 """a fabric script to create an archive file"""
 from fabric.api import local
 from datetime import datetime
-from fabric import task
 
 
-@task
 def do_pack():
     """ a method to compress a file and return it's path """
 
