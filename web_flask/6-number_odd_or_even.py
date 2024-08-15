@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""a flask script"""
+"""Flask script"""
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -18,7 +18,7 @@ def index_hbnb():
 
 
 @app.route("/c/<text>", strict_slashes=False)
-def index_c(text):i
+def index_c(text):
     """a function to return C is fun"""
     return 'C ' + text.replace('_', ' ')
 
